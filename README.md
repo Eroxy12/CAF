@@ -74,7 +74,7 @@ Confirmacion de a reserva
 -codigo pseint
 
 
-Testing
+!!Testing!!  BLOQUE 4
 
 -!!Casos de prueba 1!!
 Registro de usuario exitoso:
