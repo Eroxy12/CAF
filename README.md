@@ -1,6 +1,6 @@
 # CAF
 
-!!REQUISITOS!!
+!!REQUISITOS!! BLOQUE 1
 
 1.
 Problematica que soluciona: problemas de necesidad de espacios laborales y/o conferencias (CAF)
@@ -18,8 +18,7 @@ gestion de cuenta de usuairio: egistro de usuario login (ALTA)
 gestion de reserva: detalles de la reserva (ALTA)
 Proceso de pago seguror: confimacion de la reserva (ALTA)   
 
-!!!Analisis!!!
-
+!!!Analisis!!! BLOQUE 2
 1.
 Registro de usuario y login
 
@@ -35,7 +34,7 @@ Registro de usuario y login
 Detalles de la reserva
 
 - crear interfaz para mostrar resumen de la reserva(fecha,horarios,servicio reservado) (ALTA)
-- mostar datos del cliente (nombre ,correo,telefono) (BAJA)
+- mostar datos del cliente (nombre, apellido ,correo) (BAJA)
 - mostrar precio total y desglose de costos (impuesto y descuentos) (MEDIA)
 - permitir edicion o confirmacion de ciertos campos si aplica (BAJA)
 - validar que todos los datos estén completos antes de continuar (BAJA)
@@ -63,4 +62,106 @@ Confirmacion de a reserva
 1. el proyecto debe entregarse en menos de 24 horas
 2. debe cumplirse ciertas normativas establecidas por el teamlider
 
+
+!!!!!Diseño!!!!!   BLOQUE 3
+-https://www.figma.com/proto/dh1SWCegokJehFH3osoMEx/CAFF--Community-?node-id=2-8&p=f&t=2HMWgnJjmSJCJLOD-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2
+-Diagrama de flujo:
+
+
+!!!!Implementacion!!!  BLOQUE 4
+
+-Feature Registro de usuario
+-codigo pseint
+
+
+Testing
+
+-!!Casos de prueba 1!!
+Registro de usuario exitoso:
+
+Objetivo:
+verificar que el usuario pueda registrarse correctamente con datos validos
+
+Entradas:
+Nombre: Jonathan
+Apellido: Cardona
+Razon social: Riwi
+Correo: jon200@gmail.com
+
+Pasos:
+ingresar al formulario de registro
+completar todos los campos obligatorios
+Verificacion de correo electronico por medio de un codigo enviado a este
+Posterior a la verificacion sera registrado correctamente
+
+Resultado esperado
+El sistema crea el usuario correctamente
+se muestra un mensaje de exito o se redirige al login
+
+
+
+-!!Casos de prueba 2!!!
+Login fallido:
+
+Objetivo:
+validar que el sistema no permita el acceso con contraseña incorrecta y muestre un mensaje de error
+
+Entradas:
+correo: jon20@gmail.com
+Contraseña: Contraseñaincorrecta
+
+Pasos:
+ir al formulario de login
+ingresar el correo y contraseña
+
+Resultado esperado
+El sistema no permite el acceso
+se muestra mensaje de error como "Contraseña incorrecta o correo incorrecto"
+
+
+
+-!!Casos de prueba 3!!
+Validacion de formato de correo electronico en registro
+
+objetivo:
+verificar que el campo de correo valide correctamente el formato
+
+Entradas:
+correo: jhon20@gmail.com
+
+Pasos:
+Abrir el formulario de registro
+Ingresar un correo invalido
+
+Resultado:
+Se muestra un mensaje de error idicando que el correo no es valido
+El registro no se completa
+
+
+Posibles errores antisipados
+
+-Verificar que los campos se llenen correctamente
+-verificar el formato de correo electronico cumpla las condiciones "Debe tener caracter @"
+-verificar que inicio de sesion valide el usuario y contraseña registrados "si las credenciales no son validas no habra inicio de sesion"
+
+
+
+
+Despliegue mantenimiento
+
+mantenimiento:
+Actualizaciones de contenido: Asegúrese de que los co-working mantengan actualizados sus datos, fotos y tarifas para garantizar que la información que se muestra siempre esté al día.
+
+Actualizaciones de seguridad: Implementar actualizaciones regulares de seguridad en todas las dependencias y realizar auditorías de seguridad.
+
+
+Despliegue
+
+-Se compra el hosting y el dominio de la pagina en hosting colombia
+-Se compran los permisos para subir las apps (play store, AppStore)
+
+Futuras mejoras
+
+-Añadir pago por pse
+-login con FaceId
     
