@@ -72,7 +72,36 @@ Confirmacion de a reserva
 
 -Feature Registro de usuario
 -codigo pseint
+Descricion del codigo
 
+1. Ingreso y Validación del Nombre
+El algoritmo inicia solicitando al usuario que ingrese su nombre. Este paso se encuentra envuelto en una estructura de repetición que se ejecuta hasta que el dato ingresado sea válido. La validación consiste en verificar que el nombre no contenga números ni caracteres especiales como comas, guiones, signos de exclamación, entre otros. Si se detecta alguno de estos caracteres o si el campo está vacío, el sistema muestra un mensaje de error y solicita el nombre nuevamente.
+
+
+2. Validación del Apellido
+La siguiente etapa consiste en el ingreso del apellido, aplicando la misma lógica que con el nombre. El algoritmo revisa carácter por carácter para asegurarse de que no se hayan introducido números ni símbolos, y que el campo no esté vacío.
+
+3. Validación de la Razón Social
+El sistema solicita también una "razón social", que podría ser útil si el algoritmo se orienta a usuarios empresariales o comerciales. Se realiza exactamente la misma validación aplicada en nombre y apellido: sin números, sin símbolos, y no vacío.
+
+4. Verificación del Correo Electrónico
+Uno de los puntos más elaborados del algoritmo es la validación del correo electrónico. El sistema lee el correo ingresado y realiza varias comprobaciones:
+
+Cuenta cuántas veces aparece el símbolo “@”.
+
+Verifica que haya exactamente uno, ya que más de uno lo invalidaría como correo electrónico.
+
+Asegura que el correo no esté vacío.
+
+Analiza cada carácter para evitar símbolos no permitidos como ¿, =, :, ;, !, y que no haya letras mayúsculas.
+
+Si alguna de estas validaciones falla, se muestra un mensaje de error y se solicita el correo de nuevo.
+
+5. Registro y Confirmación de Contraseña
+Posteriormente, el algoritmo pide que el usuario establezca una contraseña y luego la confirme. Esta verificación consiste en comparar los dos valores ingresados. Si no coinciden, se muestra un mensaje de error y se repite el proceso hasta que ambas contraseñas sean iguales. se garantiza la coincidencia.
+
+6. Confirmación de Usuario
+Finalmente, el sistema simula un "inicio de sesión" inmediato. Se solicita nuevamente el correo electrónico y la contraseña, y se compara con los datos previamente ingresados. Si ambos coinciden, el algoritmo despliega el mensaje “Bienvenido al sistema”, confirmando que el usuario ha sido registrado correctamente y ha iniciado sesión.
 
 !!Testing!!  BLOQUE 4
 
@@ -117,7 +146,6 @@ ingresar el correo y contraseña
 Resultado esperado
 El sistema no permite el acceso
 se muestra mensaje de error como "Contraseña incorrecta o correo incorrecto"
-
 
 
 -!!Casos de prueba 3!!
