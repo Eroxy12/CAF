@@ -147,12 +147,13 @@ Posibles errores antisipados
 
 
 
-Despliegue mantenimiento
+!!Despliegue mantenimiento!! BLOQUE 5
 
 mantenimiento:
 Actualizaciones de contenido: Asegúrese de que los co-working mantengan actualizados sus datos, fotos y tarifas para garantizar que la información que se muestra siempre esté al día.
 
 Actualizaciones de seguridad: Implementar actualizaciones regulares de seguridad en todas las dependencias y realizar auditorías de seguridad.
+
 
 
 Despliegue
